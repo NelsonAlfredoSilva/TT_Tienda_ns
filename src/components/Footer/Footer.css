@@ -1,0 +1,23 @@
+footer {
+    background-color: beige;
+}
+
+.copyRight {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 11px;
+}
+
+.list-footer {
+    border-top: 2px solid rgba(210,210,210,0.5);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.list-footer li {
+    margin: 0 15px;
+}

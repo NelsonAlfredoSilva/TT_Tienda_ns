@@ -1,0 +1,16 @@
+.caja-Mensaje {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid #fff ;
+    margin: 2px;
+    padding: 5px;
+    background-color: grey;
+    justify-content: center;
+}
+
+.caja-Mensaje p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: yellow;
+}

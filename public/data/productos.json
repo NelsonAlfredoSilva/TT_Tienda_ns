@@ -1,0 +1,37 @@
+[
+{
+    "id":1,
+    "name":"1.000",
+    "description":"BAR BUFFET BRITO",
+    "price":163093,
+    "image":"/img/1000.jpeg"
+},
+{
+    "id":2,
+    "name":"1.140",
+    "description":"BAR DRINK",
+    "price":94047,
+    "image":"/img/1140.jpg"
+},
+{
+    "id":3,
+    "name":"2.010",
+    "description":"ESCRITORIO 2 CAJONES CON USB",
+    "price":114000,
+    "image":"/img/2010.jpeg"
+},
+{
+    "id":4,
+    "name":"5.000",
+    "description":"DESPENSERO 1 PUERA MULTIARMADO",
+    "price":112819,
+    "image":"/img/5000.jpeg"
+},
+{
+    "id":5,
+    "name":"5.200",
+    "description":"ORGANIZADOR AEREO BAJO CON VIDRIO",
+    "price":92556,
+    "image":"/img/5200.png"
+}
+]
