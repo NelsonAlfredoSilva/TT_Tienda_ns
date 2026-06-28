@@ -14,6 +14,8 @@ function App() {
       <main>
         <Routes>
           <Route path='/' element={<ItemListContainer/>}/>
+          {/** Rupa opcional para filtrar por categoria. Llamando al mismo componente en el cual se agrega useParam() */}
+          <Route path='/Category/:category' element={<ItemListContainer/>}/>
           <Route path='/productos/:id' element={<ItemDetailContainer/>}/>
           <Route path='/carrito' element={<CartView/>}/>
         </Routes>

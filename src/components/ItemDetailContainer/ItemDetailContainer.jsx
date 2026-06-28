@@ -5,6 +5,7 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { ItemDetail } from "../ItemDetail/ItemDetail"
 import { Mensajes } from "../Mensajes/Mensajes"
+import { getProductById } from "../../services/productsService"
 
 export const ItemDetailContainer = () => {
     const {id} = useParams();
@@ -12,18 +13,8 @@ export const ItemDetailContainer = () => {
     const [cargando, setCargando] = useState(true)
 
     useEffect( ()=> {
-        fetch("/data/productos.json")
-        .then((res) => res.json())
-        .then((data) => {
-            const item = data.find((element) => String(element.id) === id)
-            if (item) {
-                // Encuentra el registro
-                setItemDetail(item);
-                return;
-            }
-            // En caso de no encontrar 
-            throw new Error('Elemento no encontrado')
-        } )
+        getProductById(id)
+        .then((data) => setItemDetail(data))
         .catch((err) => console.log(err))
         .finally(() => setCargando(false))
     },[])
